@@ -9,6 +9,7 @@ import {
     referFriends,
 } from "../../Components/Common/SideBarSvg";
 import Dashboard from "../../Components/Dashboard/Dashboard";
+import Chat from "../../Components/Chat/Chat";
 import Login from "../../Components/Login/Login";
 import Onboarding from "../../Components/Onboarding/Onboarding";
 import ReferralPage from "../../Components/Referral/ReferralPage";
@@ -67,6 +68,21 @@ export const routesConfig = [
             <ProviderConfig showTag={false}>
                 <DashboardWrapper selectdRoute={"Dashboard"}>
                     <Dashboard></Dashboard>
+                </DashboardWrapper>
+            </ProviderConfig>
+        ),
+        hidden: false,
+        isUpper: true,
+    },
+    {
+        path: "/chat",
+        name: "Chat",
+        logo: GetStartedSvg(),
+        //  importConfig.routesIcons.dashboardIcon,
+        component: (
+            <ProviderConfig showTag={false}>
+                <DashboardWrapper selectdRoute={"Chat"}>
+                    <Chat></Chat>
                 </DashboardWrapper>
             </ProviderConfig>
         ),
