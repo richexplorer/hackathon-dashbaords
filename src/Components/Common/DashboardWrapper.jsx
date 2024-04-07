@@ -6,6 +6,7 @@ import { importConfig } from "../../assets/Config/importConfig";
 import { FeedbackWorkflow, Search, Survey } from "@questlabs/react-sdk";
 import FeedbackButton from "./FeedbackButton";
 import { generalFunction } from "../../assets/Config/generalFunction";
+import { zenithFunctions } from "../../assets/Config/zenithFunctions";
 import { upgrade, bookACall, logOutBtn, referFriends } from "./SideBarSvg";
 import ReferralPopup from "../Referral/ReferralPopup";
 import { ThemeContext } from "./AppContext";
@@ -170,6 +171,9 @@ export default function DashboardWrapper({ children, selectdRoute }) {
                             <li>
                                 <Link
                                     className="s_nav_menu_link"
+                                    onClick={() => {
+                                        zenithFunctions.startSession();
+                                    }}
                                 >
                                     <div>{upgrade()}</div>
                                     <p>Upgrade</p>
