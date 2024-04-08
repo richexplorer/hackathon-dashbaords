@@ -2,7 +2,7 @@
   width: 635px;
   height: 650px;
   border-radius: 50%;
-  background: linear-gradient(77.49deg, #8CC7C2 20.0%, #F9E6F9 80.00%);
+  background: linear-gradient(77.49deg, #ddd 20.0%, #aaa 80.00%);
   justify-content: center;
   align-items: center;
   display: flex;
@@ -20,8 +20,9 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .Ball {
+  .Ball-spinning {
     animation: Ball-spin infinite 5s linear;
+    background: linear-gradient(77.49deg, #8CC7C2 20.0%, #F9E6F9 80.00%);
   }
 }
 
