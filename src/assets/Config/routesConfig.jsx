@@ -10,6 +10,7 @@ import {
 } from "../../Components/Common/SideBarSvg";
 import Dashboard from "../../Components/Dashboard/Dashboard";
 import Chat from "../../Components/Chat/Chat";
+import SessionList from "../../Components/Chat/SessionList";
 import Login from "../../Components/Login/Login";
 import Onboarding from "../../Components/Onboarding/Onboarding";
 import ReferralPage from "../../Components/Referral/ReferralPage";
@@ -89,14 +90,28 @@ export const routesConfig = [
         hidden: false,
         isUpper: true,
     },
+    // {
+    //     path: "/insights",
+    //     name: "Insights",
+    //     logo: InsightsSvg(),
+    //     component: (
+    //         <ProviderConfig showTag={false}>
+    //             <DashboardWrapper selectdRoute={"insights"}>
+    //                 <ComingSoon></ComingSoon>
+    //             </DashboardWrapper>
+    //         </ProviderConfig>
+    //     ),
+    //     hidden: false,
+    //     isUpper: true,
+    // },
     {
-        path: "/insights",
-        name: "Insights",
+        path: "/sessions",
+        name: "Sessions",
         logo: InsightsSvg(),
         component: (
             <ProviderConfig showTag={false}>
-                <DashboardWrapper selectdRoute={"insights"}>
-                    <ComingSoon></ComingSoon>
+                <DashboardWrapper selectdRoute={"sessions"}>
+                    <SessionList></SessionList>
                 </DashboardWrapper>
             </ProviderConfig>
         ),
