@@ -5,4 +5,5 @@ export const mainConfig = {
     CALENDLY_LINK: "https://calendly.com/shubham-quest/chat",
     GOOGLE_REDIRECT_URI: "https://zenith-apr7.d9xyvjidb4hcu.amplifyapp.com",
     GOOGLE_CLIENT_ID: "228352612055-pu5kdco2adh7c59pdbvakater3q1idn2.apps.googleusercontent.com",
+    CONTACT_EMAIL: "shubham@questlabs.ai",
 }

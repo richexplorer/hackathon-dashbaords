@@ -32,7 +32,7 @@ export const generalFunction = {
     },
 
     getUserCredentials: () => {
-        let questUserCredentials = JSON.parse(localStorage.getItem("questUserCredentials"));
+        let questUserCredentials = JSON.parse(localStorage.getItem("questUserCredentials") || "{}");
         return questUserCredentials;
     },
 

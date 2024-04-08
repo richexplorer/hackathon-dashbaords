@@ -94,8 +94,7 @@ function FeedbackButton() {
                     description: "Suggest, we innovate together.",
                 }}
                 contactUrl={`mailto:${
-                    generalFunction.getUserCredentials()
-                        ?.email
+                    mainConfig.CONTACT_EMAIL
                 }`}
                 styleConfig={{
                     listHeading: {},
