@@ -44,7 +44,7 @@ export default function SessionsList() {
                                         {index + 1}
                                     </td>
                                     <td className="w-[90%] px-6 py-4 text-[#455A64] text-center" style={{color: bgColors[`${theme}-color-premitive-grey-9`]}}>
-                                        {conversation[0].content}
+                                        {conversation[1].content ? conversation[1].content : conversation[0].content}
                                     </td>
                                 </tr>
                             )) : (
