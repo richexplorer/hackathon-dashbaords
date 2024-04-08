@@ -15,7 +15,9 @@
   color: #fff;
 }
 
-
+.table-top-spacing {
+  margin-top: 50px; /* Adjust this value between 50-100px based on your preference */
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .Ball {

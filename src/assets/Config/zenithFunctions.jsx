@@ -40,6 +40,10 @@ export const zenithFunctions = {
 
     getAllConversations : function() {
         return JSON.parse(localStorage.getItem('conversations')) || [];
+    },
+
+    saveConversations: function(conversations) {
+        localStorage.setItem('conversations', JSON.stringify(conversations));
     }
 }
 

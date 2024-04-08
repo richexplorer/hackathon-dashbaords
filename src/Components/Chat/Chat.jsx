@@ -40,9 +40,16 @@ export default function Chat() {
 
                 </div>
                 <div style={{display:"flex", paddingTop:"1000px",  paddingLeft:"100px"}}>
-                            <img src={microphone}  style={{paddingLeft:"9px"}}/>
+                            <img src={microphone} onClick={() => {
+                              zenithFunctions.toggleSession();
+                            }} style={{paddingLeft:"9px"}}/>
+
                             <img src={play}  style={{paddingLeft:"9px"}}/>
-                            <img src={end}  style={{paddingLeft:"22px"}}/>
+                            <img src={end} 
+                              onClick={() => {
+                                zenithFunctions.endSession();
+                              }}
+                            style={{paddingLeft:"22px"}}/>
 
                 </div>
             </div>
